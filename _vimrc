@@ -1,11 +1,13 @@
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
-source C:\Program Files (x86)\Vim\vim74\macros\matchit.vim
+source $VIMRUNTIME/macros/matchit.vim
 behave mswin
 
 execute pathogen#infect()
+syntax on
 filetype plugin indent on
+set encoding=utf8
 
 syntax enable
 set background=dark
