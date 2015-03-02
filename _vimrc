@@ -36,6 +36,9 @@ inoremap jk <Esc>
 let mapleader=","
 map <C-n> :NERDTreeToggle<CR>
 
+let g:session_directory="~/.vim/session"
+let g:startify_session_dir = '~/.vim/session'
+let g:session_autosave='no'
 
 " OmniSharp won't work without this setting
 filetype plugin on
