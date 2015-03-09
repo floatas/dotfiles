@@ -38,8 +38,17 @@ set expandtab       " Expand TABs to spaces
 
 
 syntax enable
-set background=light
-colorscheme solarized
+" set background=light
+" colorscheme solarized
+syntax enable
+
+set term=xterm
+set t_Co=256
+let &t_AB="\e[48;5;%dm"
+let &t_AF="\e[38;5;%dm"
+
+colorscheme monokai
+
 
 " https://github.com/KevinGoodsell/vim-csexact - for vim color fix
 
