@@ -38,11 +38,10 @@ set expandtab       " Expand TABs to spaces
 
 
 syntax enable
-set background=dark
-colorscheme gruvbox
-if !has("gui_running")
-   let g:gruvbox_italic=0
-endif
+set background=light
+colorscheme solarized
+
+" https://github.com/KevinGoodsell/vim-csexact - for vim color fix
 
 
 inoremap jk <Esc>
