@@ -15,9 +15,12 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'KevinGoodsell/vim-csexact'
-NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
 NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Chiel92/vim-autoformat'
+NeoBundle 'ramitos/jsctags'
+NeoBundle 'angelozerr/tern-node-express'
+NeoBundle 'Tagbar'
 
 call neobundle#end()
 filetype plugin indent on
@@ -26,10 +29,9 @@ NeoBundleCheck
 
 filetype plugin on
 
-inoremap jk <Esc>
+noremap <F3> :Autoformat<CR><CR>
 
-
-let mapleader=","
+nmap <F8> :TagbarToggle<CR> 
 
 map <C-l> :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<cr> "sync with current file
