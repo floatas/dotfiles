@@ -1,5 +1,12 @@
 set nocompatible " we're using Vim, not Vi
 
+set backup
+set backupdir=C:\WINDOWS\Temp
+set backupskip=C:\WINDOWS\Temp\*
+set directory=C:\WINDOWS\Temp
+set writebackup
+
+
 " ===============================================
 " NeoBundle setup
 " ===============================================
