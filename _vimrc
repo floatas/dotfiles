@@ -425,6 +425,8 @@ NeoBundle 'Shougo/neocomplete.vim'
 
 NeoBundle 'scrooloose/syntastic'
 
+NeoBundle 'bling/vim-airline'
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -438,6 +440,8 @@ call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 " ===============================================
+set laststatus=2
+
 
 noremap <F3> :Autoformat<CR><CR>
 
